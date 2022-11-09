@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            reverse-triangle
+        </title>
+    </head>
+    <body>
+        <script>
+            let num=10;
+
+            function makeLine(size){
+                let line="";
+                
+                if (size < num) {
+                    for(let i=0; i < num - size; i++){
+                        line +=" "
+                    }    
+                }
+
+                for(let k=size; k>0; k--){
+                    line +="*"
+                }
+                return line+"\n";
+            }
+
+            function makeTriangle(num){
+                let triangle="";
+                for(let j=num; j > 0; j--){
+                    triangle+=makeLine(j)
+                }
+                return triangle;
+            }
+
+            console.log(makeTriangle(num));
+        </script>
+    </body>
+</html>

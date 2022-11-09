@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>prime-number</title>
+    </head>
+    <body>
+        <script>
+            let num=100;
+
+            function testPrime(n){
+                for(let i=2;i<=n;i++){
+                    if(n%i===0){
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }
+            }
+
+            function primeNumber(num){
+                let arr=[];
+
+                for(let j=2;j<=num;j++){
+                    if(testPrime(j)){
+                        arr.push(j);
+                    }
+                }
+                return arr;
+            }
+
+            console.log(primeNumber(num));
+            
+
+        </script>
+    </body>
+</html>

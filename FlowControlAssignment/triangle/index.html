@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>triangle</title>
+    </head>
+    <body>
+        <script>
+            
+            function makeLine(length){
+                let line="";
+                for(let i=1;i<=length;i++){
+                    line+="*";
+                }
+                return line+"\n";
+            }
+
+            
+            
+            function makeTriangle(length){
+                let triangle="";
+                for(let j=1;j<=length;j++){
+                    triangle+=makeLine(j)
+                }
+                return triangle;
+            }
+
+            console.log(makeTriangle(10));
+        </script>
+    </body>
+</html>
